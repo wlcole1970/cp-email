@@ -19,7 +19,107 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-  <!-- <script async="" defer="" src="https://buttons.github.io/buttons.js"></script> -->
+
+  <style>
+    /* desktop view  */
+    @media only screen and (min-width: 960px) {
+      .container {
+        width: 960px;
+      }
+
+      .header-left {
+        padding: 36px 15px 70px 15px !important;
+      }
+
+      .OneApp_table img{
+        max-width: 611px;
+      }
+    }
+
+    /* midsize view  */
+    @media only screen and (max-width: 960px) {
+      .container {
+        width: 600x;
+      }
+    }
+
+    /* mobile view  */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 100%;
+      }
+
+      .header-left {
+        width: 100%;
+        align-content: center;
+      }
+
+      .header-right {
+        width: 100%;
+      }
+
+      .hero-box {
+              text-align: center;
+              padding-bottom: 10px;
+            }
+
+            /* lets you row  */
+
+      .lets-you-row {
+        text-align: center;
+        width: 100%;
+      }
+
+      .lets-you-row .left-column {
+        text-align: center;
+        width: 100%;
+        
+      }
+      .lets-you-row .middle-column {
+        text-align: center;
+        width: 100%;
+      }
+      .lets-you-row .right-column {
+        text-align: center;
+        width: 100%;
+      }
+
+      /* advance table  */
+
+      .advance_table .image_head{
+        width: 100%;
+
+      }
+
+      .advance_table .advance-column-left {
+        text-align: center;
+        width: 100%;
+      }
+
+      .advance_table .advance-column-left .left-store{
+        text-align: center;
+        width: 100%;
+      }
+
+      .advance_table .advance-column-right {
+        text-align: center;
+        width: 100%;
+      }
+      .advance_table .advance-column-right .right-store{
+        text-align: center;
+        width: 100%;
+      }
+
+      
+      /*
+      .hero-box p {
+      
+      } */
+    }
+
+  </style>
+
+
 </head>
 
 <body>
@@ -37,7 +137,7 @@
               <table class="header-left" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
                 style="background: rgb(101, 255, 253); background: -moz-linear-gradient(-45deg, rgba(101,255,253,1)1%, rgba(34,150,238,1) 100%); background: linear-gradient(135deg, rgba(101,255,253,1)1%, rgba(34,150,238,1) 100%); padding: 15px 15px 70px 15px;">
                 <tr>
-                  <td
+                  <td class="hero-box"
                     style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: white;">
                     <img src="img/logo.png" alt="logo">
                     <h2 style="font-size: 30px; margin: 0; font-weight: 300; line-height: 1; padding: 25px 0 10px;">Get
@@ -45,7 +145,8 @@
                     <h1
                       style="font-size: 80px; margin: 0; line-height: 1; text-transform: uppercase; padding: 0 0 10px">
                       Hero</h1>
-                    <p style="font-style:italic; font-size: 14px; margin: 0; line-height: 1.5; padding: 20px 0 50px;">
+                    <p class="lorem-head"
+                      style="font-style:italic; font-size: 14px; margin: 0; line-height: 1.5; padding: 20px 0 50px;">
                       Lorem
                       ipsum dolor sit,
                       amet consectetur
@@ -64,7 +165,7 @@
                 <tr>
                   <td
                     style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #7d7d7d;">
-                    <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+                    <table class="menu_table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
                       <tr>
                         <td align="center">
                           <a href="#"
@@ -94,7 +195,7 @@
 
           <!-- end of header row  -->
           <!-- start of "let's you" row  -->
-          <tr>
+          <tr margin="0">
             <td class="lets-you-row" style="background: #fafafa ;">
 
               <h3
@@ -106,8 +207,8 @@
               <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
                 style="padding: 15px 15px 70px 15px;">
                 <tr>
-                  <td>
-                    <table class="title-icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
+                  <td class="">
+                    <table width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 0;">
                       <tr>
 
@@ -229,13 +330,13 @@
           <!-- start of advanced row  -->
           <tr>
             <td>
-              <table class="advance_table_left" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
+              <table class="advance_table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"
                 style="padding: 15px 15px 70px 15px; background: white;">
                 <tr>
                   <td
-                    style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #333333; padding: 36px 0 5px 0; font-size: 24px; font-weight: 300;"
+                     style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #333333; padding: 36px 0 5px 0; font-size: 24px; font-weight: 300;"
                     align="center">
-                    <img src="img/armwithwatch.jpeg" alt="watch on writst image">
+                    <img src="img/armwithwatch.jpeg" class="image_head" alt="watch on wrist image">
                   </td>
                 </tr>
                 <tr>
@@ -249,7 +350,7 @@
 
                 <tr>
                   <td>
-                    <table class="advance_table-right" width="50%" align="left" cellspacing="0" cellpadding="0"
+                    <table class="advance-column-left" width="50%" align="left" cellspacing="0" cellpadding="0"
                       border="0" style="padding: 15px 15px 0 15px; background: white;">
 
                       <tr>
@@ -262,12 +363,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="right">
+                        <td align="right" class="left-store">
                           <img src="img/playstore.png" alt="Google Play store image">
                         </td>
                       </tr>
                     </table>
-                    <table class="advance_table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
+                    <table class="advance-column-right" width="50%" align="left" cellspacing="0" cellpadding="0" border="0"
                       style="padding: 15px 15px 0 15px; background: white;">
 
                       <tr>
@@ -279,7 +380,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left">
+                        <td align="left" class="right-store">
                           <img src="img/appstore.png" alt="Apple App store image">
                         </td>
                       </tr>
@@ -297,7 +398,7 @@
               <table class="OneApp_table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0"
                 style="padding: 50px 0; background: #141414;">
                 <tr>
-                  <td>
+                  <td align="center">
                     <img src="img/one_app.jpg" alt="One App. One Solution Image">
                   </td>
                 </tr>
@@ -348,7 +449,7 @@
                   <td align="center">
                     <p class="paragraph"
                       style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #7f8887; line-height: 1.5; font-size: 14px; font-weight: 400; margin: 0; padding: 0 0 15px 0;">
-                      Lorem ipsum dolor sit, amet consectetur.</p>
+                      Lorem ipsum dolor sit,<br> amet consectetur.</p>
                   </td>
                 </tr>
                 <tr>
@@ -391,7 +492,7 @@
                   <td align="center">
                     <p
                       style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #7f8887; line-height: 1.5; font-size: 14px; font-weight: 400; margin: 0;padding: 0 0 15px 0; ">
-                      Lorem ipsum dolor sit, amet consectetur.</p>
+                      Lorem ipsum dolor sit,<br> amet consectetur.</p>
                   </td>
                 </tr>
                 <tr>
@@ -436,7 +537,7 @@
                   <td align="center">
                     <p
                       style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucide Grande', san-serif; color: #7f8887; line-height: 1.5; font-size: 14px; font-weight: 400; margin: 0; padding: 0 0 15px 0;">
-                      Lorem ipsum dolor sit, amet consectetur.</p>
+                      Lorem ipsum dolor sit,<br> amet consectetur..</p>
                   </td>
                 </tr>
                 <tr>
