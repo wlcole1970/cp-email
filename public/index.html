@@ -21,6 +21,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
 
   <style>
+
+
+
+
     /* desktop view  */
     @media only screen and (min-width: 960px) {
       .container {
@@ -50,6 +54,20 @@
         align: center !important;
         
       }
+
+      .column-left,
+      .column-middle,
+      .column-right {
+      transition: all 2s ease;
+    }
+    .column-left:hover {
+  transform: scale(1.3); 
+    }
+    .column-middle:hover {
+  transform: scale(1.3); 
+    }
+    .column-right:hover {
+  transform: scale(1.3); 
     }
 
     /* midsize view  */
@@ -73,6 +91,21 @@
         align: center !important;
        
       }
+
+      .column-left,
+      .column-middle,
+      .column-right {
+      transition: all 2s ease;
+    }
+    .column-left:hover {
+  transform: scale(1.1); 
+    }
+    .column-middle:hover {
+  transform: scale(1.1); 
+    }
+    .column-right:hover {
+  transform: scale(1.0); 
+    }
     }
 
     /* mobile view  */
@@ -482,7 +515,7 @@
                         <tr>
                           <td align="center">
 
-                            <img src="https://i.postimg.cc/85FBVRRq/watchface1.png" alt="watch screen image 1">
+                            <img class="watch1" src="https://i.postimg.cc/85FBVRRq/watchface1.png" alt="watch screen image 1">
 
                           </td>
                         </tr>
